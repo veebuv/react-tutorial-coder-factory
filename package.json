@@ -18,11 +18,18 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "axios": "^0.9.1",
     "babel-preset-stage-1": "^6.1.18",
+    "chart.js": "1.1.1",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
+    "react-chartjs": "^0.7.3",
+    "react-css-modules": "^3.7.7",
     "react-dom": "^0.14.3",
+    "react-google-maps": "^4.7.2",
     "react-redux": "^4.0.0",
-    "redux": "^3.0.4"
+    "react-sparklines": "^1.4.2",
+    "redux": "^3.0.4",
+    "redux-promise": "^0.5.1"
   }
 }
