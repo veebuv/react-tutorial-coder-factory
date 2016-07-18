@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import Chart from '../components/chart';
 import _ from 'lodash';
 import GoogleMap from '../components/google_map'
 
@@ -16,7 +15,7 @@ const styles = {
   },
   temp: {
     fontSize: '200',
-  }
+  },
 };
 
 class WeatherList extends Component{

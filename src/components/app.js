@@ -18,8 +18,7 @@ export default class App extends Component {
     this.fetchWeather = this.fetchWeather.bind(this);
   };
 
-
-  fetchWeather(city){
+  fetchWeather(city) {
       const URL = `${ROOT_URL}&q=${city}`;
       const request = axios.get(URL);
       let data;
