@@ -1,6 +1,27 @@
 import React,{Component} from 'react';
-import styles from './searchBar.css';
-import CSSModules from 'react-css-modules';
+
+const styles = {
+  submitButton: {
+    height: '40px',
+    flex: '1',
+    borderRadius: '5%',
+    border: '1px solid gray',
+    backgroundColor: 'transparent',
+  },
+
+  inputField: {
+    height: '40px',
+    flex: '5',
+    borderRadius: '5px',
+    border: '1px solid gray',
+    backgroundColor: 'transparent',
+  },
+
+  inputForm: {
+    display: 'flex',
+  },
+
+}
 
 class searchBar extends Component{
     constructor(props){
@@ -13,13 +34,13 @@ class searchBar extends Component{
     render(){
       const { value } = this.state;
         return (
-          <div className={styles.inputForm}>
+          <div style={styles.inputForm}>
             <input
                 placeholder="Get the weather of your favourite city"
-                className={styles.inputField}
+                style={styles.inputField}
                 value = {value}
                 onChange={(e) => this._onChange(e)} />
-            <button onClick={() => this._onSubmit()} className={styles.submitButton}>Submit</button>
+            <button onClick={() => this._onSubmit()} style={styles.submitButton}>Submit</button>
           </div>
         )
     }
@@ -37,4 +58,4 @@ class searchBar extends Component{
     }
 }
 
-export default CSSModules(searchBar, styles);
+export default searchBar;
